@@ -35,7 +35,10 @@ void Palindrome (int arg)  //проверяет является ли число
     int i2 = Polcentr-2; // Точка рядного множителя числа 2
     int num1,num2; // числа 1 и 2 учавствующие в сравнении
 
-    if (count%2>0)
+    if (count == 1)
+    {
+        Polindrom=1;
+    }else if (count%2>0)
     {
         while (i <= (count/2))
         {
