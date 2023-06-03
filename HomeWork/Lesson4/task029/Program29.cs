@@ -5,11 +5,10 @@
 */
 int[] ArrayElementsRnd (int arg)
 {
-    Random rnd1 = new Random();
     int[] Array = new int [arg];
     for (int i = 0; i < arg; i++)
     {
-        Array[i]= rnd1.Next(0,99) ;
+        Array[i]= new Random().Next(0,100) ;
     }
      return (Array);
  }
