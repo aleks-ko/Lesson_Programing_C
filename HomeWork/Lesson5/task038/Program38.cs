@@ -7,7 +7,7 @@ double[] GetArray () //получение массива дляной от 2 д�
     double[] Array = new double [new Random().Next(2,10)];
     for (int i = 0; i < Array.Length; i++)
     {
-        Array[i]= new Random().NextDouble()*new Random().Next(-99,100) ;
+        Array[i]= Math.Round(new Random().NextDouble()*new Random().Next(-99,100),2) ;
     }
      return (Array);
  }
