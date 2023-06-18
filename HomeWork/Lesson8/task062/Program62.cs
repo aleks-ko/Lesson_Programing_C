@@ -7,7 +7,7 @@
 10 09 08 07
 */
 
-void PrintArray(int[,] inArray) // вывод заданного двух мерного массива по ровным столбцам от 0 до 99
+void PrintArray(int[,] inArray) // вывод заданного двух мерного массива по ровным столбцам от 0 до 999
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
@@ -15,8 +15,11 @@ void PrintArray(int[,] inArray) // вывод заданного двух мер
         {
             if ( inArray[i,j] < 10)
             {
-                Console.Write($" {inArray[i,j]} ");
+                Console.Write($"  {inArray[i,j]} ");
             }else if (inArray[i,j] < 100)
+            {
+            Console.Write($" {inArray[i,j]} ");
+            } else if (inArray[i,j] < 1000)
             Console.Write($"{inArray[i,j]} ");
         }
         Console.WriteLine();
